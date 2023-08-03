@@ -3,7 +3,7 @@
   "name": "NTU Stars Calendar Generator",
   "version": "1.0",
   "description": "Generates a CSV file format from NTU Stars Page that can be imported into Google Calendar",
-
+  "permissions": ["downloads"],
   "content_scripts": [
     {
       "js": ["scripts/parse.js"],
