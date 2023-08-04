@@ -90,15 +90,15 @@ for (let row of rows) {
     day
   );
   startDate.setHours(startHour, startMinute);
-  console.log(startDate);
-  let endDate = startDate;
+  let endDate = new Date(startDate.toString());
   endDate.setHours(endHour, endMinute);
+
   calendar.createEvent({
     start: startDate,
     end: endDate,
     location: `${venue}`,
     summary: `${course} ${title}`,
-    description: `Class Type: ${classType} \n Group: ${group}`,
+    description: `Class Type: ${classType} \n Group: ${group} \n Remarks: ${remark} \n Exam: ${exam} \n AUs: ${AUs}`,
     repeating: 'WEEKLY',
     until: dates[academicYear][semester]['endDate'],
   });
