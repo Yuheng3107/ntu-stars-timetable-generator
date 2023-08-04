@@ -6,7 +6,7 @@
   "permissions": ["downloads"],
   "content_scripts": [
     {
-      "js": ["scripts/parse.js"],
+      "js": ["./parse.js"],
       "matches": [
         "https://wish.wis.ntu.edu.sg/pls/webexe/AUS_STARS_PLANNER.planner"
       ]

@@ -1,2 +1,21 @@
-# ntu-stars-timetable-generator
-Chrome Extension to parse data about timetable schedules from Nanyang Technological University (NTU)'s STARS into a CSV file format that Google Calendar accepts.
+# <img src="public/icons/icon_48.png" width="45" align="left"> Ntu Stars Timetable Generator
+
+My Chrome Extension
+
+## Features
+
+- Feature 1
+- Feature 2
+
+## Install
+
+[**Chrome** extension]() <!-- TODO: Add chrome extension link inside parenthesis -->
+
+## Contribution
+
+Suggestions and pull requests are welcomed!.
+
+---
+
+This project was bootstrapped with [Chrome Extension CLI](https://github.com/dutiyesh/chrome-extension-cli)
+

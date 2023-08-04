@@ -1,10 +1,10 @@
-const icalGenerator = require("ical-generator");
-const { ical } = icalGenerator;
-let stars_table = document.querySelectorAll("table")[3];
+import ical from 'ical-generator';
+
+let stars_table = document.querySelectorAll('table')[3];
 let rows = stars_table.rows;
-let h2 = document.querySelector("h2").innerText;
-let [academicYear, semester] = h2.split(",");
-const calendar = ical({ name: "NTU Course Timetable" });
+let h2 = document.querySelector('h2').innerText;
+let [academicYear, semester] = h2.split(',');
+const calendar = ical({ name: 'NTU Course Timetable' });
 let icalData = `BEGIN:VCALENDAR
 VERSION:2.0
 X-WR-CALNAME:NTU Modules Calendar
@@ -191,31 +191,31 @@ END:VCALENDAR
 // store information about start and end dates in dates object, key is academicYear
 // information was taken from NTU website
 let dates = {
-  "Academic Year 2023": {
-    "Semester 1": { startDate: "08/14/2023", endDate: "11/17/" },
+  'Academic Year 2023': {
+    'Semester 1': { startDate: '08/14/2023', endDate: '11/17/' },
   },
-  "Academic Year 2024": {},
-  "Academic Year 2025": {},
+  'Academic Year 2024': {},
+  'Academic Year 2025': {},
 };
 // use deprecated bgColor property because NTU site still uses it
 // initialise variables
-let currentColor = "";
-let course = "";
-let title = "";
-let AUs = "";
-let courseType = "";
-let classType = "";
-let group = "";
-let day = "";
-let time = "";
-let venue = "";
-let remark = "";
-let exam = "";
+let currentColor = '';
+let course = '';
+let title = '';
+let AUs = '';
+let courseType = '';
+let classType = '';
+let group = '';
+let day = '';
+let time = '';
+let venue = '';
+let remark = '';
+let exam = '';
 let rest;
 let blank;
 
 let parsedData = [
-  ["Subject", "Start Date", "Start Time", "End Date", "End Time"],
+  ['Subject', 'Start Date', 'Start Time', 'End Date', 'End Time'],
 ];
 // parsedData is an array of arrays containing csv data
 // gets rid of first row which is irrelevant as it only contains header data
@@ -239,4 +239,4 @@ for (let row of rows) {
     .slice(10);
 }
 
-alert("Hi");
+alert('Hi');
