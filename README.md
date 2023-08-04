@@ -1,12 +1,9 @@
-# <img src="public/icons/icon_48.png" width="45" align="left"> Ntu Stars Timetable Generator
+# Ntu Stars Timetable Generator
 
 My Chrome Extension
 
-## Features
-
-- Feature 1
-- Feature 2
-
+# Privacy Policy
+The extension will scrape data regarding your courses when you enter the NTU STARS portal. No data is transmitted to external servers, as it is purely used to generate the .ics file required to import the calender to Google Calendar
 ## Install
 
 [**Chrome** extension]() <!-- TODO: Add chrome extension link inside parenthesis -->
