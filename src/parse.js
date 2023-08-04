@@ -192,10 +192,35 @@ END:VCALENDAR
 // information was taken from NTU website
 let dates = {
   'Academic Year 2023': {
-    'Semester 1': { startDate: '08/14/2023', endDate: '11/17/' },
+    'Semester 1': {
+      startDate: new Date(2023, 8, 14),
+      endDate: new Date(2023, 11, 17),
+    },
+    'Semester 2': {
+      startDate: new Date(2024, 1, 15),
+      endDate: new Date(2024, 4, 19),
+    },
   },
-  'Academic Year 2024': {},
-  'Academic Year 2025': {},
+  'Academic Year 2024': {
+    'Semester 1': {
+      startDate: new Date(2024, 8, 12),
+      endDate: new Date(2024, 11, 15),
+    },
+    'Semester 2': {
+      startDate: new Date(2025, 1, 13),
+      endDate: new Date(2025, 4, 18),
+    },
+  },
+  'Academic Year 2025': {
+    'Semester 1': {
+      startDate: new Date(2025, 8, 11),
+      endDate: new Date(2025, 11, 14),
+    },
+    'Semester 2': {
+      startDate: new Date(2026, 1, 12),
+      endDate: new Date(2026, 4, 17),
+    },
+  },
 };
 // use deprecated bgColor property because NTU site still uses it
 // initialise variables
