@@ -5,7 +5,9 @@ let rows = stars_table.rows;
 let h2 = document.querySelector('h2').innerText;
 let [academicYear, semester] = h2.split(',');
 const calendar = ical({ name: 'NTU Course Timetable' });
-
+calendar.timezone({
+  name: 'Asia/Singapore',
+});
 // get academic Year and semester so that can input start and end date
 // store information about start and end dates in dates object, key is academicYear
 // information was taken from NTU website
@@ -104,6 +106,9 @@ for (let row of rows) {
   });
 }
 
+let url = calendar.toURL();
+console.log(url);
+chrome.runtime.sendMessage({ action: 'downloadFile', url: 'URL_TO_DOWNLOAD' });
 function getDateFromDayOfWeek(date, day) {
   // make use of the fact that semester always starts from monday
   let daysToAdd = { Mon: 0, Tue: 1, Wed: 2, Thu: 3, Fri: 4, Sat: 5 };
