@@ -110,7 +110,11 @@ for (let row of rows) {
 }
 
 let url = calendar.toURL();
-console.log(url);
+let a = document.createElement('a');
+a.href = url;
+a.click();
+// we use this since chrome.downloads.download cannot download from a blob url
+
 chrome.runtime.sendMessage({ action: 'downloadFile', url: 'URL_TO_DOWNLOAD' });
 function getDateFromDayOfWeek(date, day) {
   // make use of the fact that semester always starts from monday

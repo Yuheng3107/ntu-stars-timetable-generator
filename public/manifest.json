@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "NTU Stars Calendar Generator",
   "version": "1.0",
-  "description": "Generates a CSV file format from NTU Stars Page that can be imported into Google Calendar",
+  "description": "Generates a iCalendar (.ics) file format from NTU Stars Page that can be imported into Google Calendar",
   "permissions": ["downloads"],
   "content_scripts": [
     {
@@ -12,7 +12,10 @@
       ]
     }
   ],
-  "background": {
-    "service_worker": "background.js"
+  "icons": {
+    "16": "icon-16.png",
+    "32": "./icons/icon-32.png",
+    "48": "./icons/icon-48.png",
+    "128": "./icons/icon-128.png"
   }
 }
