@@ -101,8 +101,11 @@ for (let row of rows) {
     location: `${venue}`,
     summary: `${course} ${title}`,
     description: `Class Type: ${classType} \n Group: ${group} \n Remarks: ${remark} \n Exam: ${exam} \n AUs: ${AUs}`,
-    repeating: 'WEEKLY',
-    until: dates[academicYear][semester]['endDate'],
+    repeating: {
+      freq: 'WEEKLY',
+      until: dates[academicYear][semester]['endDate'],
+    },
+    timezone: 'Asia/Singapore',
   });
 }
 
