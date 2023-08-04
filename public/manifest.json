@@ -3,7 +3,6 @@
   "name": "NTU Stars Calendar Generator",
   "version": "1.0",
   "description": "Generates a iCalendar (.ics) file format from NTU Stars Page that can be imported into Google Calendar",
-  "permissions": ["downloads"],
   "content_scripts": [
     {
       "js": ["./parse.js"],
@@ -13,9 +12,9 @@
     }
   ],
   "icons": {
-    "16": "icon-16.png",
-    "32": "./icons/icon-32.png",
-    "48": "./icons/icon-48.png",
-    "128": "./icons/icon-128.png"
+    "16": "./icons/icon_16.png",
+    "32": "./icons/icon_32.png",
+    "48": "./icons/icon_48.png",
+    "128": "./icons/icon_128.png"
   }
 }
