@@ -67,6 +67,10 @@ for (let row of rows) {
   if (row === rows[rows.length - 1]) break;
   // check whether bgColor has changed, if it has, means it is a new mod
   if (row.bgColor !== currentColor) {
+    // check whether mod is exempted
+    if (row.children[8].innerText.toLowerCase().includes('exempted')) {
+      break;
+    }
     // update current color
     currentColor = row.bgColor;
     // record info of new mod
